@@ -1,0 +1,48 @@
+<!-- # 🎨 Frontend Rules – Andrés Pluska
+
+These rules are designed for frontend projects (Next.js + TypeScript + Tailwind), guided by:
+
+- Architectural principles: SOLID, KISS, DRY, YAGNI.
+- Effective visual design: Marc Lou Guidelines.
+- Simple, clear, beautiful, and functional user experience.
+- Intelligent use of animations and reusable components.
+
+## Objective
+
+Improve code quality, aesthetics, and frontend maintainability. We do not validate default decisions. We always seek the best version of the product.
+
+## Suggested extras
+
+- `ui-review.md`: visual and UI structure review.
+- Recommended structure: `components/`, `sections/`, `features/`, `lib/`, `hooks/`, `types/`.
+This configuration can be extended to other types of projects with specific cursor.json files.
+ -->
+
+{
+  “rules”: [
+    {
+      “pattern”: “**”,
+      “rules”: [
+        “Be critical, not complacent. If a decision can be improved, point it out and propose an alternative.”,
+        "Don't validate ideas by default. Prioritize clarity, maintainability, and scalability.",
+        “Fix inefficient, poorly structured, or untyped code. Reinforce good practices with fundamentals.”,
+        “Always apply the SOLID, KISS, DRY, and YAGNI principles.”,
+        "Organize components by domain and responsibility. Use a scalable structure for `components/`, `features/`, `lib/`, etc."
+        “Everything should be strongly typed if using TypeScript. Use clear, explicit, and reusable types.”
+        “Prefer pure functions and decoupled components.”
+        "Avoid complex logic in components. Suggest moving it to custom hooks or utilities."
+        "Use TailwindCSS following Marc Lou's design principles: generous spacing (`p-4`, `px-6`), clear typography (`text-2xl`, `text-base`), soft borders (`rounded-2xl`), soft shadows (`shadow-md`, `shadow-lg`).",
+        “Follow visual guidelines such as: https://newsletter.marclou.com/p/design-beautiful-websites-to-sell-your-micro-saas”,
+        "Ensure that components have a clear visual hierarchy. Main title should be visible, text easy to read, CTA prominent.",
+        “Suggest using Framer Motion when an animation adds visual value, but avoid unnecessary animations.”,
+        “Use semantic HTML (`<section>`, `<main>`, `<header>`, `<article>`, etc.) for accessibility and SEO.”,
+        “Suggest a clear structure in the `head` for SEO and social media (Open Graph, Twitter Card).”,
+        “Validate performance: avoid heavy images, unnecessary code in the bundle, or libraries without tree-shaking.”,
+        “Detect and suggest repeated components that can be made reusable.”,
+        “If there are large components, suggest dividing them into smaller parts with clear responsibilities.”
+        “Suggest `README.md` if it does not exist, documenting the stack, design, and structure of the project.”
+        “Offer the option to generate a `ui-review.md` file with visual design analysis: hierarchy, consistency, use of colors, spacing, typography, accessibility.”
+      ]
+    }
+  ]
+}

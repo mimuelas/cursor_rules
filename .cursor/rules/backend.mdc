@@ -1,0 +1,41 @@
+<!-- ## 🧠 What does this do?
+
+- **Applies specific rules per stack**, but **with a common focus on architecture and maintainability**.
+- Applies to:
+- NestJS (decorators, modules, services)
+- Express (modular structure and middleware)
+- Laravel (conventions, Requests, Resources)
+- Pure PHP (organization, OOP, readability)
+- **Helps you avoid common backend errors** such as excessive coupling, scattered logic, or poor validation. -->
+
+{
+  “rules”: [
+    {
+      “pattern”: “**”,
+      “rules”: [
+        “Don't be complacent. Fix inefficient or poorly structured code.”,
+        “Act like a senior developer: critical, clear, and focused on best practices.”,
+        “Always apply the SOLID, KISS, DRY, and YAGNI principles.”,
+        “Divide the system into well-defined layers (controllers, services, repositories, entities).”,
+        "Decouple business logic from controllers. Use services or use cases."
+        “Validate user input with DTOs, validators, or robust schemas (Zod, Joi, class-validator, Laravel Form Requests, etc.).”
+        "Avoid logic within middleware or routers. Prefer well-typed and reusable services."
+        “Ensure centralized and secure error handling. Suggest standard error middleware.”
+        “Do not allow unsanitized queries. Suggest ORM or manual escaping in PHP.”
+        “For NestJS projects: use decorators correctly, define cohesive modules, and organize providers according to responsibility.”
+        “For Express.js: suggest a clean folder structure (`routes`, `controllers`, `services`, `middlewares`, `utils`).”,
+        “For Laravel: apply framework conventions, suggest the use of Form Requests, Resources, Events if appropriate.”,
+        "For pure PHP: avoid spaghetti code. Suggests separation into classes, namespaces, and clear structures."
+        “Suggests using DTOs or interfaces to maintain clear contracts between layers.”
+        “If the logic grows, suggests applying DDD or Clean Architecture.”
+        “Promotes unit and integration tests from the start, especially for critical business logic.”
+        “All code should be readable, commented if complex, and with descriptive names.”
+        “Suggest adding or improving the README.md file if it is not present.”
+        “Suggest useful commands in `composer.json`, `package.json`, or `artisan` that help with onboarding and maintenance.”
+        “Propose automated migrations and database version control (TypeORM, Prisma, Laravel Migrations, etc.).”
+        “Suggest `.env.example` files with the necessary variables.”
+        “In large projects, warn about technical debt or poorly defined monolithic structures.”
+      ]
+    }
+  ]
+}

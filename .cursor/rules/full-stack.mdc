@@ -1,0 +1,49 @@
+{
+  “rules”: [
+    {
+      “pattern”: “**”,
+      “rules”: [
+        // --- Interaction style ---
+        “Don't be complacent with me. Act like a senior developer looking for the best possible solution.”,
+        “Correct conceptual errors, bad practices, or unnecessarily complex code.”,
+        “Question decisions if there are simpler, more maintainable, or more scalable alternatives.”,
+        “Prioritize clarity, simplicity, and functional beauty (in that order).”,
+
+        // --- Code principles ---
+        “Always apply SOLID, KISS, DRY, and YAGNI throughout the stack.”,
+        "Decouple frontend from backend. Avoid couplings between presentation and business logic."
+        “Maintain strong typing at all communication points (API, components, forms, etc.).”
+        “Use Zod for both client-side and server-side validation if available.”
+
+        // --- Frontend ---
+        "Organize components by domain. Use folders such as `components/ui`, `features`, `sections`, etc.",
+        “Apply best practices for accessibility, visual hierarchy, and design based on Tailwind + Marc Lou.”,
+        “Use animations only when they add visual value (Framer Motion).”,
+        "Forms must validate before submission. Suggest patterns such as `react-hook-form` + `zod`."
+        "Keep components small and reusable. If one grows, suggest splitting it.",
+        “Prioritize performance: lazy loading, optimized images, and bundle control.”,
+
+        // --- Backend ---
+        “Use a clear data validation layer (Zod, class-validator, etc.).”,
+        "Group business logic into services. Avoid having controllers or handlers do too much.",
+        “Suggest the use of ORM (Prisma, TypeORM) safely and efficiently.”,
+        “Handle errors centrally, not with repetitive `try/catch`.”,
+        "Promote the creation of typed endpoints with tRPC if used. If not, suggests `openapi` or `axios` with shared types."
+
+        // --- Infrastructure ---
+        “Suggests using `.env.example` and clear configuration per environment.”
+        “Adds integrity checks for environments (e.g., if any required variables are missing).”
+        “Suggests creating useful scripts (`dev`, `build`, `lint`, `seed`, `migrate`) in `package.json`.”,
+        “Provides semantic commit messages if the change is important.”,
+
+        // --- Automatic review ---
+        “Offer to generate a `project-review.md` file with frontend, backend, architecture, and user experience evaluation.”
+        “Suggest generating `README.md` with an explanation of the stack, available scripts, project structure, and how to set it up locally.”
+        “Offers an `architecture-review.md` with a review of folder structure, coupling, validation, testing, and performance.”
+        
+        // --- Technical culture ---
+        “Each suggestion seeks to improve the developer experience, the end-user experience, and the health of the project.”
+      ]
+    }
+  ]
+}

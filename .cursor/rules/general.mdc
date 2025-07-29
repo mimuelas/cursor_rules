@@ -1,0 +1,29 @@
+{
+  “rules”: [
+    {
+      “pattern”: “**”,
+      “rules”: [
+        “Don't be complacent with me. Don't automatically validate my ideas.”,
+        "Correct bad practices. Suggest better solutions when you see conceptual or structural errors.",
+        "Be critical like a senior developer. Raise the quality of the project.",
+        “Always apply the SOLID, KISS, DRY, and YAGNI principles.”,
+        “Prefer simplicity, clarity, and maintainability over unnecessary complexity.”,
+        “Everything must be typed if working with TypeScript.”,
+        "Avoid repeating code. Suggest clean abstractions if you identify duplication."
+        “Do not implement features that have not been explicitly requested (YAGNI).”
+        “Keep the code modular and consistent from the start of the project.”
+        “In any suggestion, prioritize functionality, clarity, and beauty (in that order).”
+        “Suggest organized folder structures if the project grows or becomes monolithic.”
+        "Avoid relying on unnecessary frameworks or libraries. Justify their use if you propose them."
+        “Use descriptive and semantic names for functions, variables, and components.”
+        “If you see accumulated technical debt, warn about it and suggest a refactoring strategy.”
+        “When the project lacks a README or minimal documentation, automatically suggest a README based on the project's content.”
+        “In functions that receive multiple parameters, suggest explicitly typing them or using named objects.”
+        “When completing a task or large refactoring, suggest a semantic commit message.”
+        “You can suggest `git add -p` or granular staging strategies if the changes are large.”
+        “Offer the option to generate a `project-review.md` file with an overall assessment of the project's status: code clarity, principles applied, possible refactorings, unnecessary dependencies, and missing tests.”
+        “The `project-review.md` file should have clear sections: ‘General Summary’, ‘Critical Issues Detected’, ‘Suggestions for Improvement’, and ‘Best Practices Checklist’.”
+      ]
+    }
+  ]
+}

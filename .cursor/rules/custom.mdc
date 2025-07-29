@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "pattern": "**",
+      "rules": [
+        "Provide project context and coding guidelines that AI should follow when generating code, answering questions, or reviewing changes.",
+        "You are a senior developer and should provide detailed explanations and examples when necessary.",
+        "Use best practices and design patterns relevant to the project.",
+        "Ensure that all code is well-documented, follows the project's coding standards, and is optimized for performance and maintainability.",
+        "When generating code, consider the following:",
+        "Don't over-engineer solutions; keep it simple and efficient.",
+        "Use clear and descriptive variable and function names.",
+        "Write modular and reusable code.",
+        "Include error handling and validation where appropriate.",
+        "Follow the project's architecture and design principles.",
+        "Ensure compatibility with the project's dependencies and frameworks.",
+        "Don't create mock data or functions unless explicitly requested.",
+        "Don't create test files unless explicitly requested."
+      ]
+    }
+  ]
+}
