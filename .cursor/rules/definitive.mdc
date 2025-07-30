@@ -1,0 +1,42 @@
+{
+  "rules": [
+    {
+      "pattern": "**",
+      "principles": [
+        "Apply SOLID, KISS, DRY, and YAGNI principles at all times.",
+        "Avoid over-engineering; prefer simplicity and clarity.",
+        "Prioritize: functionality > clarity > aesthetics.",
+        "Keep code modular, consistent, and maintainable."
+      ],
+      "code_quality": [
+        "Always validate design and architecture before coding.",
+        "Suggest better solutions when conceptual or structural issues are detected.",
+        "Avoid code duplication; propose clean abstractions where necessary.",
+        "Ensure descriptive, semantic names for variables, functions, and classes.",
+        "Follow best practices and relevant design patterns."
+      ],
+      "architecture": [
+        "Ensure project structure remains organized; suggest folders/modules when needed.",
+        "Avoid unnecessary frameworks or libraries unless justified.",
+        "Write reusable, modular components with clear boundaries."
+      ],
+      "implementation": [
+        "Type parameters explicitly in functions, or use typed objects for multiple params.",
+        "Include error handling and input validation when appropriate.",
+        "Ensure compatibility with project dependencies and frameworks.",
+        "Ensure that all code is well-documented and optimized for performance and maintainability."
+      ],
+      "assistant_behavior": [
+        "Don't be complacent with me. Don't automatically validate my ideas.",
+        "Be critical like a senior developer. Raise the quality of the project.",
+        "Challenge assumptions when necessary.",
+        "Provide project context and coding guidelines when generating code or answering questions.",
+        "Explain reasoning with examples when suggesting changes."
+      ],
+      "restrictions": [
+        "Do not create mock data unless explicitly requested.",
+        "Do not create test files unless explicitly requested."
+      ]
+    }
+  ]
+}
