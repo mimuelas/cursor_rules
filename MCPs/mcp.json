@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+      "database": {
+        "command": ".venv/Scripts/python.exe",
+        "args": [
+          "MCPs/pg_mcp_server.py"
+        ],
+        "env": {
+          "PG_HOST": "localhost",
+          "PG_PORT": "5432",
+          "PG_USER": "postgres",
+          "PG_PASSWORD": "xxxxxxxx",
+          "PG_DATABASE": "postgres"
+        }
+      }
+    }
+  }
+  
